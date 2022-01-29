@@ -1,11 +1,12 @@
 # Semteul Custom Node-RED Docker
 ## Differences from the original
-- with `"@node-red-contrib-themes/theme-collection": "2.2.0"`
+- `package.json` with `"@node-red-contrib-themes/theme-collection": "2.2.0"`
+- `docker-custom/docker-alpine.sh` with `arm64v8` and custom tag
 
-## Simple build script (arm64v8)
+## Simple build script
 ```
 cd docker-custom
-./docker-alphine.sh --build-arg ARCH=arm64v8 --tag semteul/node-red:2.2.0
+./docker-alphine.sh
 ```
 
 ## After first run
