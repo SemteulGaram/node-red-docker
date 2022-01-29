@@ -1,3 +1,33 @@
+# Semteul Custom Node-RED Docker
+## Differences from the original
+- with `"@node-red-contrib-themes/theme-collection": "2.2.0"`
+
+## Simple build script (arm64v8)
+```
+cd docker-custom
+./docker-alphine.sh --build-arg ARCH=arm64v8 --tag semteul/node-red:2.2.0
+```
+
+## After first run
+1. Goto mountable `data` directory setted by docker
+2. Edit `data/setting.js` lines below
+```
+editorTheme: {
+    theme: "<theme-name>"
+},
+```
+3. Available theme name(from https://github.com/node-red-contrib-themes/theme-collection ): 
+  - dark
+  - dracula
+  - midnight-red
+  - oled
+  - solarized-dark
+  - solarized-light
+
+---
+Below is the original README.md content
+---
+
 # Node-RED Docker
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/node-red/node-red-docker.svg)](https://greenkeeper.io/)
