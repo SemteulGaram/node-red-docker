@@ -6,7 +6,7 @@
 ## Simple build script
 ```
 cd docker-custom
-./docker-alphine.sh
+./docker-alpine.sh
 ```
 
 ## After first run
